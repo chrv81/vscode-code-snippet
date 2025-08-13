@@ -1,0 +1,57 @@
+{
+  "workbench.colorTheme": "Default Dark Modern",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.debug": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": true,
+  "tailwindCSS.emmetCompletions": true,
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "on",
+  "git.autofetch": true,
+  "editor.inlineSuggest.showToolbar": "always",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "never",
+    "source.fixAll.eslint": "never",
+    "source.organizeImports": "never"
+  },
+  "files.associations": {
+    "*.css": "css"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "auto-rename-tag.activationOnLanguage": [
+    "html",
+    "xml",
+    "php",
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact"
+  ],
+  "[markdown]": {
+    "editor.formatOnSave": false
+  },
+  "turboConsoleLog.quote": "`",
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "github.copilot.chat.fixTestFailure.enabled": false,
+  "github.copilot.chat.followUps": "always",
+  "github.copilot.chat.localeOverride": "en",
+  "github.copilot.chat.terminalChatLocation": "quickChat",
+  "github.copilot.chat.completionContext.typescript.mode": "on",
+  "github.copilot.chat.editor.temporalContext.enabled": true,
+  "github.copilot.chat.edits.temporalContext.enabled": true,
+  "editor.formatOnPaste": true,
+  "colorHelper.pickerForm": "largePalette",
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "javascript.inlayHints.parameterNames.enabled": "all"
+}
