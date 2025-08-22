@@ -1,32 +1,5 @@
 {
-  "workbench.colorTheme": "Default Dark Modern",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
-  "eslint.debug": true,
-  "prettier.jsxSingleQuote": true,
-  "prettier.singleQuote": true,
-  "tailwindCSS.emmetCompletions": true,
-  "editor.formatOnSave": true,
-  "editor.wordWrap": "on",
-  "git.autofetch": true,
-  "editor.inlineSuggest.showToolbar": "always",
-  "typescript.updateImportsOnFileMove.enabled": "never",
-  "editor.codeActionsOnSave": {
-    "source.fixAll": "never",
-    "source.fixAll.eslint": "never",
-    "source.organizeImports": "never"
-  },
-  "files.associations": {
-    "*.css": "css"
-  },
-  "editor.quickSuggestions": {
-    "strings": "on"
-  },
+  /* Activates the auto-rename tag feature for the specified languages. */
   "auto-rename-tag.activationOnLanguage": [
     "html",
     "xml",
@@ -36,22 +9,175 @@
     "javascriptreact",
     "typescriptreact"
   ],
+
+  /* Enable auto-fixing and error detection */
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit",
+    "source.addMissingImports": "explicit"
+  },
+
+    // Enable TypeScript checking for JavaScript files
+  "js/ts.implicitProjectConfig.checkJs": true,
+  "typescript.validate.enable": true,
+  "javascript.validate.enable": true,
+
+  // Enable problem matchers
+  "typescript.preferences.includePackageJsonAutoImports": "on",
+  "javascript.preferences.includePackageJsonAutoImports": "on",
+
+  // Enable error reporting
+  "typescript.reportStyleChecksAsWarnings": false,
+  "javascript.reportStyleChecksAsWarnings": false,
+
+  // Ensure ESLint is working properly
+  "eslint.enable": true,
+  "eslint.format.enable": true,
+  "eslint.lintTask.enable": true,
+  "eslint.run": "onType",
+
+  /* Sets the default formatter for the editor */
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  /* Always shows the inline suggestion toolbar */
+  "editor.inlineSuggest.showToolbar": "always",
+
+  /* Enables lightbulb code actions */
+  "editor.lightbulb.enabled": "on",
+
+  /* Enables quick suggestions for strings */
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+
+  /* Configure suggestion behavior */
+  "editor.suggest.insertMode": "insert",
+  "editor.suggest.showWords": false,
+
+  /* Sets the number of spaces per tab */
+  "editor.tabSize": 2,
+
+  /* Enables word wrap in the editor */
+  "editor.wordWrap": "on",
+
+  /* Sets ESLint code actions on save rules */
+  "eslint.codeActionsOnSave.rules": null,
+
+  /* Enables debugging for ESLint */
+  "eslint.debug": true,
+
+  /* Specifies the languages that ESLint should validate. */
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "json"
+  ],
+
+  /* Associates file extensions with specific languages */
+  "files.associations": {
+    "*.css": "tailwinds",
+    "*.html": "html",
+    "*.js": "javascript",
+    "*.jsx": "javascriptreact",
+    "*.ts": "typescript",
+    "*.tsx": "typescriptreact",
+    "*.json": "json",
+    "*.py": "python"
+  },
+
+  /* Excludes specified files and directories from searches and version control */
+  "files.exclude": {
+    "**/.git": false,
+    "**/.DS_Store": true,
+    "**/node_modules": false,
+    "**/dist": false,
+    "**/build": false,
+    "**/__pycache__": true
+  },
+
+  /* Enables automatic fetching for Git */
+  "git.autofetch": true,
+
+  /* Configures Prettier to use single quotes in JSX */
+  "prettier.jsxSingleQuote": true,
+
+  /* Configures Prettier to use single quotes */
+  "prettier.singleQuote": true,
+
+  /* Keeps hanging brackets on the same line in Python code */
+  "pythonIndent.keepHangingBracketOnLine": true,
+
+  /* Trims lines that contain only whitespace in Python code */
+  "pythonIndent.trimLinesWithOnlyWhitespace": true,
+
+  /* Uses tabs for hanging indents in Python cod */
+  "pythonIndent.useTabOnHangingIndent": true,
+
+  /* Disables the unittest framework for Python testing. */
+  "python.testing.unittestEnabled": false,
+
+  /* Enables the pytest framework for Python testing */
+  "python.testing.pytestEnabled": true,
+
+  /* Enables Emmet completions for Tailwind CSS */
+  "tailwindCSS.emmetCompletions": true,
+
+  /* Disables automatic updating of imports when TypeScript files are moved. */
+  "typescript.updateImportsOnFileMove.enabled": "never",
+
+  /* Configures the window restore behavior */
+  "window.restoreWindows": "none",
+
+  /* Sets the zoom level for the window */
+  "window.zoomLevel": 0,
+
+  /* Sets the color theme for the workbench */
+  "workbench.colorTheme": "Default Dark Modern",
+
+  /* Configures the startup editor for the workbench */
+  "workbench.startupEditor": "none",
+
+  /* language specific settings */
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[liquid]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[markdown]": {
     "editor.formatOnSave": false
   },
-  "turboConsoleLog.quote": "`",
-  "[shellscript]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
   },
-  "github.copilot.chat.fixTestFailure.enabled": false,
-  "github.copilot.chat.followUps": "always",
-  "github.copilot.chat.localeOverride": "en",
-  "github.copilot.chat.terminalChatLocation": "quickChat",
-  "github.copilot.chat.completionContext.typescript.mode": "on",
-  "github.copilot.chat.editor.temporalContext.enabled": true,
-  "github.copilot.chat.edits.temporalContext.enabled": true,
-  "editor.formatOnPaste": true,
-  "colorHelper.pickerForm": "largePalette",
-  "diffEditor.hideUnchangedRegions.enabled": true,
-  "javascript.inlayHints.parameterNames.enabled": "all"
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "shakram02.bash-beautify"
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "workbench.editor.enablePreview": false,
+  "turboConsoleLog.quote": "`",
+  "typescript.suggest.autoImports": true,
+  "javascript.suggest.autoImports": true,
+  "github.copilot.chat.agent.autoFix": false,
+  "typescript.suggest.includeAutomaticOptionalChainCompletions": true,
+  "typescript.suggest.includeCompletionsForImportStatements": true,
+  "javascript.suggest.includeAutomaticOptionalChainCompletions": true,
+  "javascript.suggest.includeCompletionsForImportStatements": true,
+  "typescript.preferences.useAliasesForRenames": false,
+  "javascript.preferences.useAliasesForRenames": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "eslint.codeActionsOnSave.mode": "all",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  }
 }
